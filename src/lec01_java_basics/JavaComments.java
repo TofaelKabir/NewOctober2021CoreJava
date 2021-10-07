@@ -1,18 +1,21 @@
 package lec01_java_basics;
 
 /*
- Java Comments:
-This is multiple line comments--
+Java Comments:
 The Java comments are the statements that are not executed by the compiler and interpreter. The comments can be used to provide information or explanation about the variable, method, class or any statement. It can also be used to hide program code.
- */
+-- 2 types -- multiple line comments and single line comment
+*/
 
 /*
- * This is a multiple line comments
- * This is not important you must have to write multiple lines
+ * This is an example of multiple line comments
+ * This is not necessary that you must have to write multiple lines
+ * If you put single slash + start, then star + single slash, then this format is used for
+ * mutiple line comments.
  */
 
 // This is single line comment
-// How to create: we use control/command + / to get single comment
+// How to create single line comment: for Windows user: we use control + / 
+// for Mac user: we use command + /
 
 public class JavaComments {
 
