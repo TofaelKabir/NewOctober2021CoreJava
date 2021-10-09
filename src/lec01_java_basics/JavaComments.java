@@ -14,6 +14,7 @@ The Java comments are the statements that are not executed by the compiler and i
  */
 
 // This is single line comment
+// Single line comment is mostly used
 // How to create single line comment: for Windows user: we use control + / 
 // for Mac user: we use command + /
 

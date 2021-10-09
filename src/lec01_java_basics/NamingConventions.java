@@ -4,7 +4,7 @@ package lec01_java_basics;
  1) Projects name generally starts with UpperCase
  2) Package name generally starts with LowerCase
  3) Class Name starts with UpperCase
- 4) class names are written in UpperCamelCase (means? See below line 19-26)
+ 4) class names are written in UpperCamelCase (means? See below line 18-26)
  4) class names are usually nouns or noun phrases.
 * */
 
