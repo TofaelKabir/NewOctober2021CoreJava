@@ -1,6 +1,6 @@
 package lec02_java_basics;
 
-public class Good_evening01 {
+public class GoodEvening01 {
 	public static void main(String[] args) {
 		// System is a class, out is a properties, println() is a method
 		System.out.println("Good Evening");
@@ -11,7 +11,7 @@ public class Good_evening01 {
 		// How to rename a class or package?
 		// select the class -- right click -- refactor -- rename -- (change name) -- finish -- finish
 		// Never ever try to rename project Name
-		// rename class/Enum/Abstract class or package
+		// rename class/Enum/Abstract class, Interface or package
 		// how to copy a class or package?
 		// select the class, control/command+c, then control/command+v -- ok, rename it -- ok
 				
