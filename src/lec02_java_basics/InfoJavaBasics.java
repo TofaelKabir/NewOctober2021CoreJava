@@ -25,7 +25,7 @@ For Windows:
 Window  -- Preferences -- General -- Appearance (double click)  -- Theme -- Choose (Dark) -- Apply -- Apply and Close 
 
 4) How to use “toggle breadcrumb”? 
--- find the symbol and click it from header
+-- find the symbol (small c) and click it from header
 
 5) How to format disorganized code? (same as no 2)
 -- Command/Control + a to select, then Command/Control + i, but it can’t remove the white spaces. so, white space absent, you can use the above commands.
