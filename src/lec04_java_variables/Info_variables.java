@@ -83,7 +83,8 @@ ii) Or by moving (initialized) the variables inside the main method without acce
 	
 20) What is the naming convention for methods?
 -- method names are written in lowerCamelCase
--- method names are usually verbs or verb phrase	
+-- method names are usually verbs or verb phrase
+
 
  */
 

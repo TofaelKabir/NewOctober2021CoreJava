@@ -31,7 +31,7 @@ public class Address03 {
 		// if a variable is non static, it can't be executed inside the main
 		// method, it will show error
 		// To call A Variable - you don't need to put it inside double quotation, Just
-		// call the variables by name
+		// call the variables by name directly
 		System.out.println(MyName); 
 		System.out.println(houseNumber); 
 		System.out.println(houseLocation); 
