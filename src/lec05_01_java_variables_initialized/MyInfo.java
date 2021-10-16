@@ -24,7 +24,9 @@ public class MyInfo {
 	}
 
 	
-// We removed the main method to a different class
+// We removed the main method to a different class, but kept it below as we can also use it at the end of methods
+	
+	
 	
 //	public static void main(String[] args) {
 //		MyInfo myInfo = new MyInfo();

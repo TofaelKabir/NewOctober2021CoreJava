@@ -3,17 +3,17 @@ package lec05_02_java_variables_declared;
 public class TestMyInfo {
 
 	public static void main(String[] args) {
-		MyInfo myInfo = new MyInfo();  // Constructor initialized
-		myInfo.MyName = "John"; // variables initialized from this line
-		myInfo.myAge = 90;
-		myInfo.myHouseRent = 30000;
-		myInfo.myYearlySalary = 300000;
-		myInfo.myBankBalance = 786872685648l;
-		myInfo.mySex = 'M';
-		myInfo.myHeight = 1.90f;
-		myInfo.myGrade = 3.58473657348;
-		myInfo.usCitizen = true;
-		myInfo.myInformation(); // method initialized
+		MyInfo myInfo1 = new MyInfo();  // Constructor initialized
+		myInfo1.MyName = "John"; // variables initialized from this line
+		myInfo1.myAge = 90;
+		myInfo1.myHouseRent = 30000;
+		myInfo1.myYearlySalary = 300000;
+		myInfo1.myBankBalance = 786872685648l;
+		myInfo1.mySex = 'M';
+		myInfo1.myHeight = 1.90f;
+		myInfo1.myGrade = 3.58473657348;
+		myInfo1.usCitizen = true;
+		myInfo1.myInformation(); // method initialized
 		
 		System.out.println("\n********************************************\n");
 		

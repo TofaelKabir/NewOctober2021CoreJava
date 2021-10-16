@@ -1,7 +1,7 @@
 package lec04_java_variables;
 
 /*
- 1) What does a class body contain?
+1) What does a class body contain?
 -- class body contain:
 			-- i) Variable --- Declared and/or Initialize
 			-- ii) Constructor  --- Declared and/or Initialize
@@ -28,6 +28,7 @@ package lec04_java_variables;
 7) What is the Info about int (called Integer) type variables?
 -- int type variable start with lowercase, int type variable doesn't have any quotation
 -- By default, the value of int is zero. (important interview question)
+-- solid number
 
 8) What is the Info about char type variables?
 -- char type variable start with lowercase, char type variable is inside single quotation
