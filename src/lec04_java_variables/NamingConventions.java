@@ -1,25 +1,22 @@
 package lec04_java_variables;
 
-// Projects names are generally written in UpperCamelCase
-// Camel case example for a project --> October2021CoreJava
+//Projects names are generally starts with UpperCase
+//Camel case example for a project --> October2021CoreJava
+//Alternative example of Camel case, for a project --> October_2021_core_java 
 
-// Package names are generally written in lowerCamelCase
-// Camel case example for a package --> lec01JavaBasics
+//Package names are generally starts with lowerCase
+//Camel case example for a package --> lec01JavaBasics
+//Alternative example of Camel case, for a package --> lec01_java_basics
 
-// Class names are written in UpperCamelCase (means? See below)
-// Class names are usually nouns or noun phrases.
-// Camel case example for a class --> NamingConventions
-
-// What is the alternative of camel case?
-// Underscore and then start with lower case. 
-// Alternative example of Camel case, for a project --> October_2021_core_java 
-// Alternative example of Camel case, for a package --> lec01_java_basics
-// Alternative example of Camel case, for a class --> Naming_conventions
+//Class names starts with UpperCase 
+//Class names are usually nouns or noun phrases.
+//Camel case example for a class --> NamingConventions
+//Alternative example of Camel case, for a class --> Naming_conventions
 
 public class NamingConventions {
 
-	// non-constant field/variable names are written with lowerCamelCase
-	// Exception is String type, start with UpperCamelCase.
+	// non-constant field/variable names starts with lowerCase
+	// Exception is String type, starts with UpperCase.
 	// variable names must be specific and meaningful
 	// no duplication is accepted
 	public int houseNumber = 625; // variable initialized
@@ -33,7 +30,7 @@ public class NamingConventions {
 	// because they are are not specific and can cause confusion like the variable below:
 	public String string = "String";
 
-	// method names are written in lowerCamelCase
+	// method names starts with lowerCase
 	// method names are usually verbs or verb phrase
 	// method name can be same as Class name
 	public static void namingConventions() { // method implemented

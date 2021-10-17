@@ -19,7 +19,7 @@ package lec04_java_variables;
 -- it means we did not assign any value for variables.
 
 5) what does it mean by -- variable initialized?
--- it means we assigned value for variables.
+-- it means we assign value for variables.
 
 6) What is the Info about String type variables?
 -- String type variable start with Uppercase, String type variable is inside double quotation.
@@ -28,7 +28,6 @@ package lec04_java_variables;
 7) What is the Info about int (called Integer) type variables?
 -- int type variable start with lowercase, int type variable doesn't have any quotation
 -- By default, the value of int is zero. (important interview question)
--- solid number
 
 8) What is the Info about char type variables?
 -- char type variable start with lowercase, char type variable is inside single quotation
@@ -46,7 +45,7 @@ ii) Or by moving (initialized) the variables inside the main method without acce
 11) " " -- is it called?
 --  empty/null String
 
-12) How to call a Variable in main method?
+12) How to call a Variable in the main method?
 -- We don't need to put it inside double quotation or single quotation like String, Just call the variables by it's name, inside sysout to see the initialized value of the variable.
 
 13) Can we call multiple variables inside one sysout by + symbol and see the outcome?
@@ -55,18 +54,18 @@ ii) Or by moving (initialized) the variables inside the main method without acce
 14) Can we call multiple variables and String inside one sysout by + symbol and see the outcome?
 -- Yes
 
-15) Is Constructor name same as Class Name?
+15) Is the Constructor name the same as Class Name?
 -- Yes
 
-16) What are the features of method?
--- method name is always in lower case
+16) What are the features of the method?
+-- method name is always starts with lowercase
 -- class doesn't have a parentheses, but the method have
 -- when {curly braces} is present, then we can say, the method is implemented
--- method can not be declared (only implemented) like variables or constructor inside class.
--- method name can be same as Class name, but must be in lower case. -- important interview question
+-- method can not be declared (only implemented) like variables or constructor inside a class.
+-- method name can be the same as Class name, but must be in lower case. -- important interview question
 
 17) What is the naming convention for variables?
--- non-constant field/variable names are written with lowerCamelCase. Exception is String type, they start with UpperCamelCase.
+-- non-constant field/variable names start with lowerCase. Exception is String type, they start with UpperCase.
 -- variable names must be specific and meaningful
 -- no duplication is accepted. example below.
  	public  int houseNumber = 625; // variable initialized
@@ -83,9 +82,8 @@ ii) Or by moving (initialized) the variables inside the main method without acce
 	public  String string = "String"; x
 	
 20) What is the naming convention for methods?
--- method names are written in lowerCamelCase
--- method names are usually verbs or verb phrase
-
+-- method names starts with lowerCase
+-- method names are usually verbs or verb phrase	
 
  */
 

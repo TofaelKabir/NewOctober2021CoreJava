@@ -1,6 +1,6 @@
 package lec04_java_variables;
 
-//we learn how to call a method inside main method and also constructor
+// we learn how to call a method inside main method and also constructor
 
 public class Address06 {
 	// Variables come first

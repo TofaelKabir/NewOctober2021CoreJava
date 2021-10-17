@@ -34,9 +34,12 @@ What is an alternative to the camel case?
 -- Alternative example of Camel case, for a class --> Naming_conventions
 
 8) What is the Main method?
--- Entry point for Java
+-- Entry point for Java. 
+represented by - 
+public static void main(String[] args) {
+}
 
-9) Who is the access modifier? ***important interview question
+9) Who are the access modifier? ***important interview question
 -- public, protected, private, default
 -- To learn more:
 https://www.javatpoint.com/access-modifiers#:~:text=The%20access%20modifiers%20in%20Java,types%20of%20Java%20access%20modifiers%3A&text=It%20cannot%20be%20accessed%20from%20outside%20the%20class.
@@ -55,6 +58,27 @@ https://www.javatpoint.com/access-modifiers#:~:text=The%20access%20modifiers%20i
 -- How to create a single line comment?
 -- for Windows user: we use control + / 
 -- for Mac user: we use command + /
+
+13) What is the current version of Java? ****
+--> 17 (update accordingly)
+
+14) What is the most stable version of Java? ****
+--> 1.8
+
+15) What is the advantage of using Java 1.8?
+--> It has compatibility with other applications.
+
+16) What is the command to check the Java version?*****
+--> command: java -version
+
+17) What is the command to check the Git version?*****
+--> command: git --version
+
+18) Write some names of IDE’s other than Eclipse. ****
+-- IntelliJ IDEA, WebStorm (for Javascript), PyCharm, Visual Studio Code, Atom etc.
+
+
+
 
  */
 
