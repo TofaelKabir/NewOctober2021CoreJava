@@ -38,6 +38,7 @@ What is an alternative to the camel case?
 represented by - 
 public static void main(String[] args) {
 }
+-- The method is static
 
 9) Who are the access modifier? ***important interview question
 -- public, protected, private, default
@@ -47,7 +48,7 @@ https://www.javatpoint.com/access-modifiers#:~:text=The%20access%20modifiers%20i
 10) how to print sysout by shortcut when content assist is absent?
 -- Syso + ctrl + space bar 
 
-11) How to write the main method when you forgot and you set up content assist?
+11) How to write the main method when you forgot to select and you already set up content assist?
 -- main + enter
 
 12) What is Java_comments?
@@ -75,7 +76,7 @@ https://www.javatpoint.com/access-modifiers#:~:text=The%20access%20modifiers%20i
 --> command: git --version
 
 18) Write some names of IDE’s other than Eclipse. ****
--- IntelliJ IDEA, WebStorm (for Javascript), PyCharm, Visual Studio Code, Atom etc.
+-- IntelliJ IDEA, WebStorm (for Javascript), PyCharm (for python), Visual Studio Code, Atom etc.
 
 
 

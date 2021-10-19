@@ -1,7 +1,7 @@
 package lec02_java_basics;
 
 // I am going to fix it here, see below commands. (line 15 to 26)
-public class GoodNight03 { 
+public class GoodNight03 {
 	public static void main(String[] args) {
 		System.out.println("Hello Student!");
 		System.out.println("Today is your second class.");
@@ -20,6 +20,6 @@ public class GoodNight03 {
 // limitation: it can't remove white space
 // what is the final solution for indentation issue/problem?
 // control/command+a, then shift+control/command+f
-// always at the end of code, save all and follow above command
+// always at the end of code, follow above command  and then save all
 // how to save a class -- control/command+s
 // how to save all class -- shift + control/command+s
