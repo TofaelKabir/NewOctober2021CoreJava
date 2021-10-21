@@ -17,7 +17,7 @@ public class MyInfo {
 		System.out.println("This below information is to know about my self");
 	}
 
-	// method
+	// void type method
 	public void myInformation() { // method is implemented
 		System.out.println("My Name is: " + MyName + "\nMy Age: " + myAge + "\nMy HouseRent: " + myHouseRent
 				+ "\nYearly Salary: " + myYearlySalary + "\nMy Bank Blance" + myBankBalance + "\nSex: " + mySex

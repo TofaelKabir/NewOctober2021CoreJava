@@ -1,4 +1,4 @@
-package lec06_connecting_git_and_github;
+package lec06_connecting_git_with_github;
 
 /*
 Git and Github:
