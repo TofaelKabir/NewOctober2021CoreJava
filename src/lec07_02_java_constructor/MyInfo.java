@@ -22,6 +22,9 @@ public class MyInfo {
 		System.out.println("This below information is to know about my self");
 	}
 
+	public MyInfo(short a, byte b) {
+		System.out.println("short and byte");
+	}
 
 	public MyInfo(String myName, int myAge, char mySex, boolean usCitizen) {
 		this.MyName = myName;
