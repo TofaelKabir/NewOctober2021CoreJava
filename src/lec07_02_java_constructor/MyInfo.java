@@ -15,7 +15,8 @@ public class MyInfo {
 	public float myHeight;
 	public double myGrade;
 	public boolean usCitizen;
-
+	
+	//TODO Nasir, why short and byte can't be put as argument in parameterized constructor?
 	
 	public MyInfo() {
 		System.out.println("This below information is to know about my self");
