@@ -22,10 +22,6 @@ public class MyInfo {
 		System.out.println("This below information is to know about my self");
 	}
 
-	public MyInfo(short a, byte b) {
-		System.out.println("short and byte");
-	}
-
 	public MyInfo(String myName, int myAge, char mySex, boolean usCitizen) {
 		this.MyName = myName;
 		this.myAge = myAge;
@@ -33,7 +29,6 @@ public class MyInfo {
 		this.usCitizen = usCitizen;
 		System.out.println("My Name is: " + MyName + "\nMy Age: " + myAge + "\nSex: " + mySex + "\nAm I US Citizen? Ans: " + usCitizen);
 	}
-
 
 	public MyInfo(String myName, int myAge, int myYearlySalary, long myBankBalance, char mySex,
 			float myHeight, double myGrade, boolean usCitizen) {
@@ -49,6 +44,4 @@ public class MyInfo {
 		System.out.println("My Name is: " + MyName + "\nMy Age: " + myAge + "\nYearly Salary: " + myYearlySalary + "\nMy Bank Blance" + myBankBalance + "\nSex: " + mySex
 				+ "\nMy Height: " + myHeight + "\nMy Grade: " + myGrade + "\nAm I US Citizen? Ans: " + usCitizen);
 	}
-
-
 }
