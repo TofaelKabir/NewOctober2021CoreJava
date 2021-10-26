@@ -6,7 +6,7 @@ public class TestMyInfo {
 		MyInfo info = new MyInfo();
 		MyInfo john = new MyInfo("John", 26, 20000, 76343264722l, 'M', 1.676f, 3.9765384, false);
 		System.out.println("\n********************************\n");
-		MyInfo Tina = new MyInfo("Tina", 36, 30000, 765765264722l, 'F', 1.076f, 3.65384, true);
+		MyInfo tina = new MyInfo("Tina", 36, 30000, 765765264722l, 'F', 1.076f, 3.65384, true);
 		System.out.println("\n********************************\n");
 		MyInfo tofael = new MyInfo("Tofael", 26, 'M', false);
 
