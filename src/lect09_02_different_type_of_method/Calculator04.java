@@ -1,4 +1,4 @@
-package lect08_02_different_type_of_method;
+package lect09_02_different_type_of_method;
 
 public class Calculator04 {
 	// Global variable or class variable

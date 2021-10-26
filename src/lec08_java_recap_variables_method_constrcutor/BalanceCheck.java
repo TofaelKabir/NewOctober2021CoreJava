@@ -1,11 +1,11 @@
-package lec08_java_rewind;
+package lec08_java_recap_variables_method_constrcutor;
 
 public class BalanceCheck {
 	
 	//Naming convention
 	//package = lower, class = Upper, constructor = Upper, variable = lower, method = lower
 	
-	//8 types of premative variables, 9 types of data variables
+	//8 types of primitive variables, 9 types of data variables
 	//boolean, byte, char, short, float, int, double, long : premitive 
 	//String is a collection of char
 	

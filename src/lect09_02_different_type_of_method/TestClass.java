@@ -1,4 +1,4 @@
-package lect08_02_different_type_of_method;
+package lect09_02_different_type_of_method;
 
 public class TestClass {
 
@@ -15,6 +15,7 @@ public class TestClass {
 		System.out.println("\n-------------------------------\n");
 		Calculator03 cal3 = new Calculator03();
 		cal3.multiplication();
+		cal3.division(8.222f, 3.011f);
 		
 		System.out.println("\n-------------------------------\n");
 		Calculator04 cal4 = new Calculator04();
@@ -26,11 +27,20 @@ public class TestClass {
 		cal5.addition(77, 21);
 		cal5.subtraction(33, 6);
 		cal5.subtraction(55, 7);
+		cal5.multiplication(6, 3);
+		cal5.division(10, 5);
 		
 		System.out.println("\n-------------------------------\n");
 		Calculator06 cal6 = new Calculator06();
-		cal6.addition(56, "7");
-		cal6.subtraction(34, 12.74658364);
+		cal6.addition(31, 13); // we put the argument
+		cal6.subtraction(12, 2);
+		
+		System.out.println("\n-------------------------------\n");
+		Calculator07 cal7 = new Calculator07();
+		cal7.addition(56, "7");
+		cal7.subtraction(34, 12.74658364);
+		cal7.multiplication(4, 2.123f);
+		cal7.division(4.22, "2.11");
 
 	}
 

@@ -1,4 +1,4 @@
-package lect08_02_different_type_of_method;
+package lect09_02_different_type_of_method;
 
 public class Calculator03 {
 	// Global variable or class variable
@@ -11,6 +11,13 @@ public class Calculator03 {
 		float total1 = a*b;
 		System.out.println("Multiplication of a and b is: "+total1);
 		return total1;
+	}
+	
+	// Added later, parameterized return method
+	public float division(float c, float d) {
+		float total2 = c/d;
+		System.out.println("Division of c and d is: "+total2);
+		return total2;
 	}
 	
 	

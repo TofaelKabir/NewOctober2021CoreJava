@@ -1,4 +1,4 @@
-package lec08_java_rewind;
+package lec08_java_recap_variables_method_constrcutor;
 
 public class TestBalanceCheck {
 	

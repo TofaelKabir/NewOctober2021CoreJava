@@ -1,8 +1,8 @@
-package lect08_02_different_type_of_method;
+package lect09_02_different_type_of_method;
 
 public class Calculator01 {
 	// Global variable or class variable
-	// default type of access modifier is used
+	// default type of access modifier is used, no reason, just for practice
 	int a = 50; 
 	int b = 30;
 	

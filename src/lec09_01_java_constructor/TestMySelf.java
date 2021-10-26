@@ -1,4 +1,4 @@
-package lec08_01_java_constructor;
+package lec09_01_java_constructor;
 
 public class TestMySelf {
 	public static void main(String[] args) {
