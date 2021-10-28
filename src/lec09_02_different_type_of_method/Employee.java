@@ -1,4 +1,4 @@
-package lect09_02_different_type_of_method;
+package lec09_02_different_type_of_method;
 
 public class Employee {
 	public int empID;

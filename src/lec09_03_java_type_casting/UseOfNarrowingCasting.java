@@ -1,6 +1,6 @@
 package lec09_03_java_type_casting;
 
-//Narrowing casting must be done manually by placing the type in parentheses in front of the value
+// Narrowing casting must be done manually by placing the type in parentheses in front of the value
 public class UseOfNarrowingCasting {
 	public static void main(String[] args) {
 	    double myDouble = 9.78723;
