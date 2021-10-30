@@ -6,8 +6,8 @@ public class UseOfNarrowingCasting {
 	    double myDouble = 9.78723;
 	    int myInt = (int) myDouble; // Manual casting: double to int
 
-	    System.out.println(myDouble);   // Outputs 9.78723
-	    System.out.println(myInt);      // Outputs 9
+	    System.out.println(myDouble);   // Outputs 9.78723 -- double
+	    System.out.println(myInt);      // Outputs 9 -- int
 	  }
 
 }

@@ -47,7 +47,7 @@ public class CompareNumber08 {
 		} else if (val1 % 2 == 1 && val1 != val2) {
 			System.out.println(val1 + " is an odd number and not equal to " + val2);
 		} else if (!(val1 % 2 == 1 && val1 == val2)) {
-			System.out.println(val1 + " is not an even number and not equal to " + val2);
+			System.out.println(val1 + " is not an off number and not equal to " + val2);
 		} else if (val1 % 2 == 0 && val1 >= val2) {
 			System.out.println(val1 + " is an even number and greater than (or equal to)  " + val2);
 		} else if (val1 % 2 == 0 && val1 <= val2) {

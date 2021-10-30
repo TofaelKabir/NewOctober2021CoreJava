@@ -21,8 +21,6 @@ public class Employee {
 		this.sex = s;
 		this.usCitizen = isCitizen;
 		System.out.println("EmpName: "+fn + " " + ln + "\nEmpId: " + id + "\nSex: " + s + "\nIs US Citizen? "+ isCitizen + "\n"  );
-
-
 	}
 	
 	public static void main(String[] args) {
