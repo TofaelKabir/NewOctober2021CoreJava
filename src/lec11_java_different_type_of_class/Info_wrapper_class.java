@@ -50,16 +50,13 @@ System.out.println(20 + 25 + "100" + " " + 20 + 10 + (10 + 10) + 5 + 6);
 13) What is the formula to convert - a int type variable to a String type variable?
 -- String.valueOf(age)
 
-14) What is the formula to convert - a float/double type variable to a String type variable?
+14) What is the formula to convert - a float/double type variable (age) to a String type variable?
 -- String.valueOf(age)
  
  15) What is the below outcome under the main method?
  System.out.println(10+20+ "30" + "  " + 280); 
  -- 3030 280
  
-
-
-
  */
 
 public class Info_wrapper_class {

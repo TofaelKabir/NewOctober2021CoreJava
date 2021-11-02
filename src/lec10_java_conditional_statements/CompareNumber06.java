@@ -30,3 +30,9 @@ public class CompareNumber06 {
 		}
 	}
 }
+
+//TODO Nested if else (later)
+// Can do it in this loop, if val1 is odd and greater than val2 
+
+// TODO Ternary Operator (later)
+// https://www.w3schools.com/java/java_conditions.asp

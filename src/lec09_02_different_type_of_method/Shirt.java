@@ -2,6 +2,7 @@ package lec09_02_different_type_of_method;
 
 public class Shirt {
 	public static void main(String[] args) {
+		
 		char size = 'L';
 		
 		switch(size) {
