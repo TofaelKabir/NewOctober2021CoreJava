@@ -8,7 +8,7 @@ what is the difference between while and do while loop? very important interview
 
  */
 
-public class Use_of_java_do_while_loop {
+public class C_use_of_java_do_while_loop {
 
 	public static void main(String[] args) {
 
@@ -43,7 +43,7 @@ public class Use_of_java_do_while_loop {
 		int l = 20;
 		do {
 			System.out.println("The values is: " + l);
-			l -= 3;
+			l -=3;
 		} while (l >= 5);
 
 	}

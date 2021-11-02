@@ -23,7 +23,7 @@ i = i-3 means decrement by 3
 i - = 3 means decrement by 3
  
  */
-public class use_of_java_for_loop {
+public class A_use_of_java_for_loop {
 
 	public static void main(String[] args) {
 		

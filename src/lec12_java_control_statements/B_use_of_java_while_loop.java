@@ -6,7 +6,7 @@ all the loop contain: initialization block, conditional block and increment or d
 common mistakes: type of variable (like: int), semicolon (;) -- we put coma instead, forgot ; after incremental or decremental block (i++)
  */
 
-public class Use_of_java_while_loop {
+public class B_use_of_java_while_loop {
 
 	public static void main(String[] args) {
 
