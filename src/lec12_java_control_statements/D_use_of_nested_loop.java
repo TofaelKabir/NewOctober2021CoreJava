@@ -1,9 +1,8 @@
 package lec12_java_control_statements;
 
-public class D_use_of_nested_for_loop {
+public class D_use_of_nested_loop {
 
 	public static void main(String[] args) {
-		
 
 		System.out.println("\n---------- nested loop (for loop inside a for loop) ----------\n");
 		for (int i = 0; i <= 2; i++) {
@@ -31,7 +30,6 @@ public class D_use_of_nested_for_loop {
 				m += 2;
 			}
 		}
-		
 
 		System.out.println("\n---------- nested loop----------\n");
 		// as double type is used , we can get decimal for that
