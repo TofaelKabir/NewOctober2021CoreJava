@@ -1,34 +1,23 @@
 package lec13_java_conditional_statements;
 
-import java.util.Scanner;
-
-// Nested if else condition
+// Nested if condition 
 
 public class CompareNumber09 {
 
 	public static void main(String[] args) {
-		System.out.println("Please put value here: ");
-		Scanner scanner = new Scanner(System.in);
-
-		int val1 = scanner.nextInt();
-		int val2 = scanner.nextInt();
-		
-		if (val1 % 2 == 0) {
-			if(val1<val2) {
-				System.out.println(val1 + " is an even number and "+val1+" is less than "+ val2);
-			} else if (val1>val2) {
-				System.out.println(val1 + " is an even number and "+val1+" is greater than "+ val2);
+		// Creating two variables for age and weight
+		int age = 25;
+		int weight = 48;
+		// applying condition on age and weight
+		if (age >= 18) {
+			if (weight > 50) {
+				System.out.println("You are eligible to donate blood");
+			} else {
+				System.out.println("You are not eligible to donate blood");
 			}
-
-		}else if(val1 % 2 == 1){
-			if(val1<val2) {
-				System.out.println(val1 + " is an odd number and "+val1+" is less than "+ val2);
-			} else if (val1>val2) {
-				System.out.println(val1 + " is an odd number and "+val1+" is greater than "+ val2);
-			}
+		} else {
+			System.out.println("Age must be greater than 18");
 		}
-		scanner.close(); // formalities, but if you don't use, no change.
-
 	}
 
 }

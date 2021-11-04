@@ -3,8 +3,10 @@ package lec13_java_different_type_of_class;
 import java.util.Scanner;
 
 /*
-System is a class, and in is a property of InputStream
-nextInt()  is a method of Scanner class
+System is a class, and 'in' is a property of InputStream
+nextInt()  is a method of Scanner class (for int type)
+nextLine() is a method of Scanner class (for String type)
+close() is a method of Scanner class
 To learn more: https://www.javatpoint.com/Scanner-class
 */
 public class Use_of_scanner_class04 {

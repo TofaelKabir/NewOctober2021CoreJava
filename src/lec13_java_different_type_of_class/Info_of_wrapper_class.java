@@ -59,6 +59,6 @@ System.out.println(20 + 25 + "100" + " " + 20 + 10 + (10 + 10) + 5 + 6);
  
  */
 
-public class Info_wrapper_class {
+public class Info_of_wrapper_class {
 
 }

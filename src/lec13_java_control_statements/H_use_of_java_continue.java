@@ -1,6 +1,6 @@
 package lec13_java_control_statements;
 
-public class F_use_of_java_continue {
+public class H_use_of_java_continue {
 
 	public static void main(String[] args) {
 		System.out.println("\n---------- for loop  ----------\n");

@@ -13,9 +13,9 @@ Whatever you want to print, it will be printed. either it is true or false, corr
 But if we wish to write a second condition , we have to use ‘else if’, not ‘else’. 
 
 Even number: A number divided by 2 with remainder 0.
-Example - 56 : 8/2 --- quotient 28, remainder 0
+Example - 56 : 56/2 --- quotient 28, remainder 0
 Odd number: A number divided by 2 with remainder 1.
-Example - 37 : 9/2 --- quotient 18, remainder 1
+Example - 37 : 37/2 --- quotient 18, remainder 1
 
 Java Logical Operators: 
 Logical operators are used to determine the logic between variables or values. example below:
@@ -47,7 +47,7 @@ public class CompareNumber08 {
 		} else if (val1 % 2 == 1 && val1 != val2) {
 			System.out.println(val1 + " is an odd number and not equal to " + val2);
 		} else if (!(val1 % 2 == 1 && val1 == val2)) {
-			System.out.println(val1 + " is not an off number and not equal to " + val2);
+			System.out.println(val1 + " is not an odd number and not equal to " + val2);
 		} else if (val1 % 2 == 0 && val1 >= val2) {
 			System.out.println(val1 + " is an even number and greater than (or equal to)  " + val2);
 		} else if (val1 % 2 == 0 && val1 <= val2) {

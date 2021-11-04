@@ -56,11 +56,11 @@ x < 5 || x < 4)
 
 8) What is an Even number?
 -- A number divided by 2 with remainder 0.
--- Example - 56 : 8/2 --- quotient 28, remainder 0
+-- Example - 56 : 56/2 --- quotient 28, remainder 0
 
 9) What is an Odd number?
 -- A number divided by 2 with remainder 1.
--- Example - 37 : 9/2 --- quotient 18, remainder 1
+-- Example - 37 : 37/2 --- quotient 18, remainder 1
 
 
  */
