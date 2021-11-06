@@ -14,14 +14,13 @@ public class E_use_of_java_break {
 			System.out.println(i);
 		}
 		
-		System.out.println("\n---------- for loop after the break  ----------\n");
+		System.out.println("\n---------- for loop after the break 01  ----------\n");
 		for(int j=0; j<=10; j=j+2) {
 			if(j==6) {
 				break; // when we use break, then the loop is completed before the sysout
 			}
 			System.out.println(j);
-		}
-		
+		}	
 		
 		System.out.println("\n---------- while loop ----------\n");
 		int i = 0;

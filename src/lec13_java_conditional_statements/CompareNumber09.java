@@ -5,8 +5,9 @@ package lec13_java_conditional_statements;
 public class CompareNumber09 {
 
 	public static void main(String[] args) {
+		
 		// Creating two variables for age and weight
-		int age = 25;
+		int age = 17;
 		int weight = 48;
 		// applying condition on age and weight
 		if (age >= 18) {

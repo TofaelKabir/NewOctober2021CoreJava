@@ -15,10 +15,10 @@ public class F_use_of_java_break {
 
 	public static void main(String[] args) {
 		// outer loop
-		for (int i = 1; i <= 3; i++) {
+		for (int i = 1; i <= 3; i++) { // 1, 2, 3
 			// inner loop
-			for (int j = 1; j <= 3; j++) {
-				if (i == 2 && j == 2) {
+			for (int j = 1; j <= 3; j++) { // 1, 2, 3
+				if (i == 2 && j == 2) { // 1 1, 1 2, 1 3, 2 1, 3 1, 3 2, 3 3
 					// using break statement inside the inner loop
 					break;
 				}
