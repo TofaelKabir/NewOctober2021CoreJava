@@ -1,4 +1,4 @@
-package lec14_java_oop_abstraction;
+package lec15_java_oop_abstraction;
 
 public abstract class ElectricCar {
 	// This is the norm to write at least one abstract method inside abstract class
