@@ -19,8 +19,8 @@ public class Employee extends MountSinai{
 		super("Bronx", 21); // represent the parameterized constructor of parent class
 		
 		// super keyword is used to call (initialize) the methods of super (Parent) class
-		super.mountSinaiInfo01();
-		super.mountSinaiInfo02("Long Island", 16);
+		super.msInfo();
+		super.mountSinaiInfo("Long Island", 16);
 		
 		// super keyword is used to call (initialize) the variables of Parent class
 		super.inNewYork = true;
@@ -33,8 +33,8 @@ public class Employee extends MountSinai{
 	// parameterized constructor
 	public Employee(String empName, int empId, char sex, boolean fullTimeEmp) {
 		super("Brooklyn", 15);
-		super.mountSinaiInfo01();
-		super.mountSinaiInfo02("Staten Island", 13);
+		super.msInfo();
+		super.mountSinaiInfo("Staten Island", 13);
 		super.inNewYork = false;
 		super.rating = 7.543f;
 		System.out.println("This hospital is in NY? :"+inNewYork+"\nThe rating is: "+rating+"\n");
@@ -47,11 +47,11 @@ public class Employee extends MountSinai{
 	}
 	
 	// void type or no return method or non parameterized method
-	public void empInfo01() {
+	public void empInfo() {
 		// we can't call constructor of super class inside a method of child class.
 		// super();
-		super.mountSinaiInfo01();
-		super.mountSinaiInfo02("Terry", 30);
+		super.msInfo();
+		super.mountSinaiInfo("Terry", 30);
 		super.inNewYork = false;
 		super.rating = 9.543f;
 		System.out.println("This hospital is in NY? :"+inNewYork+"\nThe rating is: "+rating+"\n");
@@ -59,11 +59,11 @@ public class Employee extends MountSinai{
 	}
 	
 	// parameterized method
-	public void empInfo02(String empName, int empId, char sex, boolean fullTimeEmp) {
+	public void employeeInfo(String empName, int empId, char sex, boolean fullTimeEmp) {
 		// we can't call constructor of super class inside a method of child class.
 		// super();
-		super.mountSinaiInfo01();
-		super.mountSinaiInfo02("Nasau", 20);
+		super.msInfo();
+		super.mountSinaiInfo("Nasau", 20);
 		super.inNewYork = true;
 		super.rating = 7.543f;
 		System.out.println("This hospital is in NY? :"+inNewYork+"\nThe rating is: "+rating+"\n");

@@ -21,12 +21,12 @@ public class MountSinai {
 	}
 
 	// void type method
-	public void mountSinaiInfo01() {
+	public void msInfo() {
 		System.out.println("This method is from MountSinai class\n");
 	}
 	
 	// parameterized method
-	public void mountSinaiInfo02(String location, int bonus) {
+	public void mountSinaiInfo(String location, int bonus) {
 		this.location = location;
 		this.bonus = bonus;
 		System.out.println("The Location: "+location+"\nIt's Yearly Bonus: "+bonus+"%\n");
