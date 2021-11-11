@@ -17,61 +17,67 @@ public class Toyota extends FlyingCar implements Car, Drone{
 
 	@Override
 	public void rent() {
-		// TODO Auto-generated method stub
+		System.out.println("rent method from Taxi Interface");
 		
 	}
 
 	@Override
-	public void carryingpassenger() {
-		// TODO Auto-generated method stub
+	public void carryingPassenger() {
+		System.out.println("carryingPassenger method from Taxi Interface");
 		
 	}
 
 	@Override
 	public void carryingGoods() {
-		// TODO Auto-generated method stub
+		System.out.println("carryingGoods method from Truck Interface");
 		
 	}
 
 	@Override
 	public void lightWeight() {
-		// TODO Auto-generated method stub
+		System.out.println("lightWeight method from Drone Interface");
 		
 	}
 
 	@Override
 	public void start() {
-		// TODO Auto-generated method stub
+		System.out.println("start method from Car Interface");
 		
 	}
 
 	@Override
 	public void stop() {
-		// TODO Auto-generated method stub
+		System.out.println("stop method from Car Interface");
 		
 	}
 
 	@Override
 	public void brake() {
-		// TODO Auto-generated method stub
+		System.out.println("brake method from Car Interface");
 		
 	}
 
 	@Override
 	public void autoPilot() {
-		// TODO Auto-generated method stub
+		System.out.println("autoPilot method from Flying Car Abstract class");
 		
 	}
 
 	@Override
 	public void price() {
-		// TODO Auto-generated method stub
+		System.out.println("price method From Electric Car Abstract class");
 		
 	}
 
 	@Override
 	public void canFloat() {
-		// TODO Auto-generated method stub
+		System.out.println("canFloat method from HoverCar Interface");
+		
+	}
+
+	@Override
+	public void space() {
+		System.out.println("space method from Rocket Interface");
 		
 	}
 
