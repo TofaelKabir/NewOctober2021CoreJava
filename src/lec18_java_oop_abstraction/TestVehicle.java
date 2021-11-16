@@ -31,6 +31,7 @@ public class TestVehicle {
 		toyota.cost();
 		toyota.speed();
 		Toyota.toyota(); // To call a static method, we need the help of the class where ot belongs to
+		Toyota.flyingCar(); // This is added later
 		
 		System.out.println("\n--------------------- Interface Car ------------------------");
 		// Cannot instantiate the type Car

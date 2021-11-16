@@ -151,6 +151,9 @@ Abstraction:
 45) Default methods are only allowed in Interface?
 -- True
 
+46) A regular class extends Abstract class implements Interface. can a regular class directly (without creating an object) call a static method from Them?
+-- Not from Interface, but from Abstract class.
+
 
  * */
 
