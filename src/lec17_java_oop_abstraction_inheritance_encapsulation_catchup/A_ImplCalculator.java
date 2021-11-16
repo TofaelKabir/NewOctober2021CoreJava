@@ -1,6 +1,6 @@
-package lec17_java_catchup;
+package lec17_java_oop_abstraction_inheritance_encapsulation_catchup;
 
-public class ImplCalculator extends AbsCalculator implements CalculatorBluePrint{
+public class A_ImplCalculator extends E_AbsCalculator implements B_CalculatorBluePrint{
 
 	@Override
 	public int addition(int a, int b) {
@@ -42,6 +42,18 @@ public class ImplCalculator extends AbsCalculator implements CalculatorBluePrint
 	
 	public void concreatClass() {
 		System.out.println("Concreate class");
+	}
+
+	@Override
+	public void numberFormat() {
+		System.out.println("This method is from Number Format Interface");
+		
+	}
+
+	@Override
+	public void numberType() {
+		System.out.println("This method is from NumberInterface Interface");
+		
 	}
 	
 	

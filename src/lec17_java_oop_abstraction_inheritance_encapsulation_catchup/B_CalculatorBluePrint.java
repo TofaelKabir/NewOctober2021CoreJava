@@ -1,6 +1,6 @@
-package lec17_java_catchup;
+package lec17_java_oop_abstraction_inheritance_encapsulation_catchup;
 
-public interface CalculatorBluePrint extends NumberFormat{
+public interface B_CalculatorBluePrint extends C_NumberFormat, D_NumberInterface{
 
 	public abstract int addition(int a, int b);
 	public abstract int substraction(int a, int b);
@@ -9,5 +9,9 @@ public interface CalculatorBluePrint extends NumberFormat{
 	
 	public static void interfaceName() {
 		System.out.println("Calculator Interface");
+	}
+	
+	public default void intName() {
+		System.out.println("From default method of Interface");
 	}
 }
