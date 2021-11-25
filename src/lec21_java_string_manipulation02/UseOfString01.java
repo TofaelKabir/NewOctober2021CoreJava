@@ -1,4 +1,4 @@
-package lec20_java_string_manipulation01;
+package lec21_java_string_manipulation02;
 
 // https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 
