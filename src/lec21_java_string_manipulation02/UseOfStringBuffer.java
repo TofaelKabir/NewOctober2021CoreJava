@@ -11,12 +11,12 @@ public class UseOfStringBuffer {
 		System.out.println(sb);
 		
 		// The insert() method inserts the given String with this string at the given position.		
-		StringBuilder sb2 = new StringBuilder("Wee to Java");
+		StringBuffer sb2 = new StringBuffer("Wee to Java");
 		sb2.insert(2, "lcom");
 		System.out.println(sb2);
 		
 		// The replace() method replaces the given String from the specified beginIndex and endIndex.
-		StringBuilder sb3 = new StringBuilder("Welcomi oo Javascript");
+		StringBuffer sb3 = new StringBuffer("Welcomi oo Javascript");
 		sb3.replace(6, 10, "e to"); // replace start from 6, the upper boundary is 10 and excluded
 		System.out.println(sb3);
 		
@@ -31,7 +31,7 @@ public class UseOfStringBuffer {
 		
 		// The capacity() method of the StringBuffer class returns the current capacity of the buffer. The default capacity of the buffer is 16.
 
-		StringBuilder sb4 = new StringBuilder();
+		StringBuffer sb4 = new StringBuffer();
 		System.out.println(sb4.capacity());
 		sb4.append("Hello! "); // by default 16
 		System.out.println(sb4.capacity());
