@@ -7,20 +7,20 @@ import java.util.Set;
 public class G02_findStringWhichPresentMoreThanOne {
 
 	public static void main(String[] args) {
-		String [] names = { "java", "selenium", "hi", "hello", "java", "selenium", "java", "hello", "Bye" };
-		Set <String> duplicateName = new HashSet<String>();
+		String [] language = { "Java", "C++", "C#", "Python", "Java", "C++", "Java", "Python", "Javascript" };
+		Set <String> moreThanOne = new HashSet<String>();
 		
-		for(int i=0; i<names.length; i++) { 
+		for(int i=0; i<language.length; i++) { 
 			
-			for (int j = i+1; j<names.length; j++) {
+			for (int j = i+1; j<language.length; j++) {
 				
-				if(names[i].equals(names[j])) {
+				if(language[i].equals(language[j])) {
 					
-					duplicateName.add(names[i]);
+					moreThanOne.add(language[i]);
 				}
 			}
 		}
-		System.out.println(duplicateName);
+		System.out.println("Duplicated Strings are : "+moreThanOne);
 	}
 
 }
