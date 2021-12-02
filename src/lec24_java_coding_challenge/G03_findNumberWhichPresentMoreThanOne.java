@@ -1,4 +1,4 @@
-package lec23_java_coding_challenge;
+package lec24_java_coding_challenge;
 
 import java.util.HashSet;
 import java.util.Set;
