@@ -11,10 +11,10 @@ Output: "Sharkar Kabir Tofael Mohammad Hello"
 
 */
 
-public class H_reverseByWord {
+public class H_reverseTheWordsFromParagraph {
 
 	public static void main(String[] args) {
-		String name = "Hello Mohammad Tofael Kabir Sharkar";
+		String name = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora debitis maiores nemo modi! Alias pariatur nulla rem ipsum, molestiae modi atque dignissimos eius impedit, dolorem iusto voluptatem qui ea?";
 		String [] words = name.split(" ");
 		// System.out.println(Arrays.toString(words)); 
 		// I did above line just to show that the sentence is splitted to a List
