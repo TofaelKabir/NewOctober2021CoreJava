@@ -3,7 +3,7 @@ package lec31_java_selenium_methods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class A_use_of_get_method {
+public class A01_use_of_get_method_by_main_method {
 
 	public static void main(String[] args) {
 		// System is a class and setProperty is a method

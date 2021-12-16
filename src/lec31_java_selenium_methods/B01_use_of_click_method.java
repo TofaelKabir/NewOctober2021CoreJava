@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class C_use_of_click_method {
+public class B01_use_of_click_method {
 	WebDriver driver;
 
 	@BeforeTest
