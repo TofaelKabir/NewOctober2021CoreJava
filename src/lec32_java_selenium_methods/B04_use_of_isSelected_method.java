@@ -1,4 +1,4 @@
-package lec31_java_selenium_methods;
+package lec32_java_selenium_methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,26 +7,31 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class B01_use_of_click_method {
+// isSelected(), isEnabled(), isDisplayed() -- important interview question
+// isSelected() is the method used to verify if the web element is selectable or
+// not. isSelected() method is predominantly used with radio buttons, dropdowns
+// and checkboxes.
+
+public class B04_use_of_isSelected_method {
 	WebDriver driver;
 
 	@BeforeTest
 	public void setUp() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
-		// WebDriver is an interface and ChromeDriver is a concrete class	
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	
-		driver.get("https://portaldev.cms.gov/portal/");
+		driver.get("https://olui2.fs.ml.com/login/signin.aspx");
 		Thread.sleep(4000);
 	}
-
-	@Test
-	public void loginButtonTest() throws InterruptedException{
-		driver.findElement(By.id("cms-login-submit")).click();
-		Thread.sleep(8000); // we gave this sleep to see the changes, but not necessary
+	
+	
+	@Test (enabled=true, priority = 1)
+	public void loginButtonTest(){
+		boolean checkBox =	driver.findElement(By.xpath("//input[@id='saveOnlineID']")).isSelected();
+		System.out.println("Is the check Box Selected? Ans: "+checkBox);
 	}
-
+	
 	@AfterTest
 	public void tearUp() {
 		driver.quit();

@@ -1,4 +1,4 @@
-package lec31_java_selenium_methods;
+package lec32_java_selenium_methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

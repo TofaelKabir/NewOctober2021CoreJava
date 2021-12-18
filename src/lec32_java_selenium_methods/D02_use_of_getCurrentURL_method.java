@@ -1,4 +1,4 @@
-package lec31_java_selenium_methods;
+package lec32_java_selenium_methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,24 +7,25 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class B01_use_of_click_method {
+public class D02_use_of_getCurrentURL_method {
 	WebDriver driver;
 
 	@BeforeTest
 	public void setUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
-		// WebDriver is an interface and ChromeDriver is a concrete class	
+		System.setProperty("webdriver.chrome.driver",
+				"/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();	
+		driver.manage().deleteAllCookies();
 		driver.get("https://portaldev.cms.gov/portal/");
 		Thread.sleep(4000);
 	}
-
-	@Test
-	public void loginButtonTest() throws InterruptedException{
-		driver.findElement(By.id("cms-login-submit")).click();
-		Thread.sleep(8000); // we gave this sleep to see the changes, but not necessary
+	
+	@Test(enabled = true, priority = 1)
+	public void currentURLTest() throws InterruptedException {
+		driver.findElement(By.xpath("//a[text()='New User Registration']")).click();
+		Thread.sleep(5000);
+		System.out.println("The Current URL is: "+driver.getCurrentUrl());
 	}
 
 	@AfterTest

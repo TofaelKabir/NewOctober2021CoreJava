@@ -1,4 +1,4 @@
-package lec31_java_selenium_methods;
+package lec32_java_selenium_methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class B01_use_of_click_method {
+public class B02_05_use_of_click_method_by_different_locator {
 	WebDriver driver;
 
 	@BeforeTest
@@ -21,12 +21,13 @@ public class B01_use_of_click_method {
 		Thread.sleep(4000);
 	}
 
-	@Test
-	public void loginButtonTest() throws InterruptedException{
-		driver.findElement(By.id("cms-login-submit")).click();
-		Thread.sleep(8000); // we gave this sleep to see the changes, but not necessary
+	// cssSelector by class (class name should be unique, if more than one class is present)
+	// --> dot and the write class name inside the string, remove the space, and put dot between class
+	@Test (enabled = true, priority = 1)
+	public void loginHeadingTest(){
+		driver.findElement(By.cssSelector(".cms-icon.cms-sprite-loggedout.mt-0.mb-0")).isDisplayed();
 	}
-
+	
 	@AfterTest
 	public void tearUp() {
 		driver.quit();
