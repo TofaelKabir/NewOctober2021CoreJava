@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class B02_05_use_of_click_method_by_different_locator {
+public class B03_use_of_click_method_by_className_locator {
 	WebDriver driver;
 
 	@BeforeTest
@@ -21,11 +21,9 @@ public class B02_05_use_of_click_method_by_different_locator {
 		Thread.sleep(4000);
 	}
 
-	// cssSelector by class (class name should be unique, if more than one class is present)
-	// --> dot and the write class name inside the string, remove the space, and put dot between class
 	@Test (enabled = true, priority = 1)
-	public void loginHeadingTest(){
-		driver.findElement(By.cssSelector(".cms-icon.cms-sprite-loggedout.mt-0.mb-0")).isDisplayed();
+	public void newUserRegistrationTest(){
+		driver.findElement(By.className("cms-newuser-reg")).click();
 	}
 	
 	@AfterTest

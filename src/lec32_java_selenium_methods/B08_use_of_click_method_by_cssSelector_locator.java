@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class B02_02_use_of_click_method_by_different_locator {
+public class B08_use_of_click_method_by_cssSelector_locator {
 	WebDriver driver;
 
 	@BeforeTest
@@ -17,14 +17,15 @@ public class B02_02_use_of_click_method_by_different_locator {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	
-		driver.get("https://www.ebay.com/");
+		driver.get("https://portaldev.cms.gov/portal/");
 		Thread.sleep(4000);
 	}
 
-	// source: at the bottom of the page, first element from Sell column
+	// cssSelector by id (id should be unique)
+	// --> # (hash) and then write id name inside the string
 	@Test (enabled = true, priority = 1)
-	public void sellTest(){
-		driver.findElement(By.linkText("Start selling")).click();
+	public void loginButtonTest(){
+		driver.findElement(By.cssSelector("#cms-login-submit")).click();
 	}
 	
 	@AfterTest

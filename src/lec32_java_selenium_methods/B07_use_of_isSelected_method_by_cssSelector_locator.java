@@ -7,41 +7,27 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
-public class C01_use_of_sendKeys_method {
+public class B07_use_of_isSelected_method_by_cssSelector_locator {
 	WebDriver driver;
 
 	@BeforeTest
 	public void setUp() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
+		// WebDriver is an interface and ChromeDriver is a concrete class	
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	
 		driver.get("https://portaldev.cms.gov/portal/");
 		Thread.sleep(4000);
 	}
-	
-	
-	@Test (enabled=true, priority = 1)
-	public void userIdTest() throws InterruptedException{
-		driver.findElement(By.xpath("//input[@id='cms-login-userId']")).sendKeys("p2ph1test_ms497");
-		Thread.sleep(5000);
+
+	// cssSelector by class (class name should be unique, if more than one class is present)
+	// --> dot and then write class name inside the string, remove the space, and put dot between class
+	// isDisplayed() should be used after explaining
+	@Test (enabled = true, priority = 1)
+	public void loginHeadingTest(){
+		driver.findElement(By.cssSelector(".cms-icon.cms-sprite-loggedout.mt-0.mb-0")).isDisplayed();
 	}
-	
-	@Test (enabled=true, priority = 3)
-	public void searchFieldTest() throws InterruptedException{
-		driver.get("https://www.amazon.com/");
-		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Laptop");
-		Thread.sleep(5000);
-	}
-	
-	@Test (enabled=true, priority = 2)
-	public void passwordTest() throws InterruptedException{
-		driver.findElement(By.xpath("//input[@id='cms-login-password']")).sendKeys("Password@12");
-		Thread.sleep(5000);
-	}
-	
-	
 	
 	@AfterTest
 	public void tearUp() {

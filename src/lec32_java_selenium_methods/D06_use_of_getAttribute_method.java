@@ -21,6 +21,7 @@ public class D06_use_of_getAttribute_method {
 		Thread.sleep(4000);
 	}
 
+	// an extra example, nothing to learn from here
 	@Test(enabled = true, priority = 1)
 	public void getAttributeTest() {
 		WebElement value = driver.findElement(By.xpath("//a[normalize-space(text())='Our Locations' and @class='hidden-xs dropdown']"));

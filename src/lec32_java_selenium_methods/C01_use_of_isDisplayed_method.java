@@ -7,30 +7,31 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class B02_03_use_of_click_method_by_different_locator {
+// isDisplayed() is an alternate of click()method which is boolean type
+// isDisplayed() is the method used to verify the presence of a web element
+// within the web page.
+// Use of isDisplayed()
+
+public class C01_use_of_isDisplayed_method {
 	WebDriver driver;
 
 	@BeforeTest
 	public void setUp() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
-		// WebDriver is an interface and ChromeDriver is a concrete class	
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	
-		driver.get("https://www.ebay.com/");
+		driver.get("https://portaldev.cms.gov/portal/");
 		Thread.sleep(4000);
 	}
-
-	// source: at the bottom of the page, first element from Sell column
 	
-	@Test (enabled = true, priority = 1)
-	public void SellTest02() {
-		driver.findElement(By.partialLinkText("Start selli")).click();
+	// if there is a no priority, whihc one will run first? -- Alphabetically
+	@Test (enabled=true, priority = 1)
+	 public void logoTest() {
+		boolean elementDisplayed=driver.findElement(By.xpath("//a[@id='cms-homepage-link']")).isDisplayed();
+		System.out.println("Is the logo displayed? Ans: "+elementDisplayed);
 	}
 	
-	
-	
-
 	@AfterTest
 	public void tearUp() {
 		driver.quit();

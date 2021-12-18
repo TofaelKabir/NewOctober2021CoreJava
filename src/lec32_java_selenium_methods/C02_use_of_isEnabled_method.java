@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 // disabled within the web page. isEnabled() is primarily used with buttons.
 // Use of isEnabled(), a boolean type method
 
-public class B03_use_of_isEnabled_method {
+public class C02_use_of_isEnabled_method {
 	WebDriver driver;
 
 	@BeforeTest
