@@ -1,4 +1,4 @@
-package lec32_java_selenium_methods;
+package lec33_java_selenium_methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class B07_use_of_isSelected_method_by_cssSelector_locator {
+
+public class F_use_of_navigate_method {
 	WebDriver driver;
 
 	@BeforeTest
@@ -21,20 +22,18 @@ public class B07_use_of_isSelected_method_by_cssSelector_locator {
 		Thread.sleep(4000);
 	}
 
-	// if the class contain separate words, they are actually different class, then
-	// we have to close the gap between class and we have to put period between them
-	// this test case failed but the rules is correct
-	// cssSelector by class (class name should be unique, if more than one class is present)
-	// --> dot and then write class name inside the string, remove the space, and put dot between class
-	// isDisplayed() should be used after explaining
+	// what is the alternate method of get(), ans: navigate().to()
 	@Test (enabled = true, priority = 1)
-	public void loginHeadingTest(){
-		driver.findElement(By.cssSelector(".cms-icon.cms-sprite-loggedout.mt-0.mb-0")).isDisplayed();
+	public void navigationTest(){
+		driver.navigate().to("https://www.amazon.com");
+		driver.navigate().back(); // CMS
+		driver.navigate().forward(); // Amazon
+		driver.navigate().refresh(); // Amazon
 	}
 	
 	@AfterTest
 	public void tearUp() {
 		driver.quit();
 	}
-
+	
 }

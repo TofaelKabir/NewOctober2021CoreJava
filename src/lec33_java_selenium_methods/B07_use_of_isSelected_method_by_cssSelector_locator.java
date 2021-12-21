@@ -1,4 +1,4 @@
-package lec32_java_selenium_methods;
+package lec33_java_selenium_methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,13 +23,12 @@ public class B07_use_of_isSelected_method_by_cssSelector_locator {
 
 	// if the class contain separate words, they are actually different class, then
 	// we have to close the gap between class and we have to put period between them
-	// this test case failed but the rules is correct
-	// cssSelector by class (class name should be unique, if more than one class is present)
-	// --> dot and then write class name inside the string, remove the space, and put dot between class
-	// isDisplayed() should be used after explaining
+	// cssSelector by class --> first html tag, then dot, then write class name inside the string, 
+	// remove the space between class, and replace with dot or period
+	// future reference: isDisplayed() should be used after explaining
 	@Test (enabled = true, priority = 1)
-	public void loginHeadingTest(){
-		driver.findElement(By.cssSelector(".cms-icon.cms-sprite-loggedout.mt-0.mb-0")).isDisplayed();
+	public void loginPageHeadingTest(){
+		driver.findElement(By.cssSelector("em.cms-icon.cms-sprite-loggedout.mt-0.mb-0")).isDisplayed();
 	}
 	
 	@AfterTest
