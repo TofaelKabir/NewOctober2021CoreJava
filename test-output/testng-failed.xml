@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="lec33_java_selenium_methods.G_use_of_manage_by_driver">
+      <class name="lec34_java_selenium_methods.J02_webBasedAlert">
         <methods>
           <include name="tearUp"/>
-          <include name="pageLoadTimeoutForWindow"/>
+          <include name="acceptAlertFromWindow"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- lec33_java_selenium_methods.G_use_of_manage_by_driver -->
+      </class> <!-- lec34_java_selenium_methods.J02_webBasedAlert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -66,7 +66,7 @@ public class G_use_of_manage_by_driver {
 	*/
 	
 	// Very important interview question
-	// full screen size: (1440, 900) for Tofael
+	// full screen size: (1440, 900) for Tofael, it may vary by the size of the screen
 	@Test(enabled = false, priority = 6)
 	public void setASpecificSizeOfWindow() throws InterruptedException {
 		Dimension dimension = new Dimension(700, 500); // choose any size in the range of (1440, 900)
@@ -80,7 +80,7 @@ public class G_use_of_manage_by_driver {
 		Thread.sleep(5000);
 	}
 	
-	// TODO FAILING, NEED to see later
+	// TODO FAILING, NEED to see later, Nasir
 	@SuppressWarnings("deprecation")
 	@Test(enabled = true, priority = 7)
 	public void pageLoadTimeoutForWindow() {
@@ -88,7 +88,15 @@ public class G_use_of_manage_by_driver {
 		driver.get("https://www.costco.com");
 	}
 	
-	
+	// not so important
+	// TODO for asynchronous behavior, need to explain more. Nasir
+	@SuppressWarnings("deprecation")
+	@Test(enabled = false, priority = 8)
+	public void setScriptTimeoutForWindow() {
+        driver.manage().timeouts().setScriptTimeout(5000, TimeUnit.MILLISECONDS);
+		driver.get("https://www.ebay.com");		
+
+	}
 
 	@AfterTest
 	public void tearUp() {
