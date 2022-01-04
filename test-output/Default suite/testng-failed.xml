@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="lec34_java_selenium_methods.J02_webBasedAlert">
+      <class name="lec38_java_selenium_methods.MountSinaiHomePageTest">
         <methods>
-          <include name="tearUp"/>
-          <include name="acceptAlertFromWindow"/>
           <include name="setUp"/>
+          <include name="titleTest"/>
+          <include name="contactNumberTest"/>
+          <include name="findADoctorTest"/>
+          <include name="tearUp"/>
+          <include name="logoTest"/>
         </methods>
-      </class> <!-- lec34_java_selenium_methods.J02_webBasedAlert -->
+      </class> <!-- lec38_java_selenium_methods.MountSinaiHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

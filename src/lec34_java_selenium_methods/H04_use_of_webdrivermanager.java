@@ -15,6 +15,14 @@ public class H04_use_of_webdrivermanager {
 	WebDriver driver;
 // Not working, leave it for now.
 	@BeforeTest
+	
+	
+	
+	// Tried with extra 6 jars but http client is not working.
+	// better try during automation framework
+	
+	
+	
 	public void setUp() throws InterruptedException {	
 		// if you choose version, then it will use that specific version
 		// if you don't use driverVersion() method, it will open the most updated version

@@ -39,17 +39,20 @@ public class E03_use_of_sendKeys_method_and_click_by_enter_key_and_then_clear {
 	}
 	
 	// click submit button by Enter key from keyboard	
-		@Test (enabled=true, priority = 2)
-		public void searchAProductTest02() throws InterruptedException{		
-			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Laptop", Keys.ENTER);
-			Thread.sleep(3000);
-			System.out.println("Current URL is: "+driver.getCurrentUrl());
-			driver.findElement(By.id("twotabsearchtextbox")).clear();
-			Thread.sleep(3000);
-			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iPad", Keys.ENTER);
-			Thread.sleep(3000);
-			
-		}
+	@Test (enabled=true, priority = 2)
+	public void searchAProductTest02() throws InterruptedException{		
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Laptop", Keys.ENTER);
+		Thread.sleep(3000);
+		System.out.println("Current URL is: "+driver.getCurrentUrl());
+		driver.findElement(By.id("twotabsearchtextbox")).clear();
+		Thread.sleep(3000);
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iPad", Keys.RETURN);
+		driver.findElement(By.id("twotabsearchtextbox")).clear();
+		Thread.sleep(3000);
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Dell XPS 15", Keys.TAB);
+		Thread.sleep(3000);
+		
+	}
 		
 	@AfterTest
 	public void tearUp() {
