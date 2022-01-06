@@ -1,7 +1,6 @@
 package lec38_java_selenium_methods;
 
-import java.util.concurrent.TimeUnit;
-
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -26,8 +25,11 @@ public class K04_how_to_find_hidden_element {
 		driver.manage().deleteAllCookies();
 		driver.get("https://courses.letskodeit.com/practice");
 		// use of implicitly wait 
-		// Please ask Nasir when he use implicitly wait , why it is deprecated and what is the alternative
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);		
+		// Please inform Nasir 
+		// driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
+		// To learn more: change in selenium 4--  
+		// https://www.qed42.com/insights/coe/quality-assurance/selenium-4-deprecated-modified-and-new-methods
 	}
 
 	@Test(enabled = true, priority = 1)

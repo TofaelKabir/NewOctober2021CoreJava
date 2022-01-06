@@ -1,12 +1,14 @@
 package lec38_java_selenium_methods;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class MountSinaiHomePage {
-
+	WebDriver driver;
+	
 	// most common way to represent the web element
 	@FindBy(xpath = "//img[@alt='Mount Sinai']")
 	public static WebElement logo;
@@ -34,7 +36,7 @@ public class MountSinaiHomePage {
 	}
 	
 	public void checkRequestAnAppointment() {
-		
+		driver.findElement(requestAnAppointment).click();
 	}
 	
 	public void checkContactNumber() {

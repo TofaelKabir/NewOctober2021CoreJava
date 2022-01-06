@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="lec38_java_selenium_methods.MountSinaiHomePageTest">
+      <class name="lec39_java_selenium_methods.N01_use_of_explicitly_wait">
         <methods>
           <include name="setUp"/>
-          <include name="titleTest"/>
-          <include name="contactNumberTest"/>
-          <include name="findADoctorTest"/>
+          <include name="requestAnAppointmentTest"/>
           <include name="tearUp"/>
-          <include name="logoTest"/>
         </methods>
-      </class> <!-- lec38_java_selenium_methods.MountSinaiHomePageTest -->
+      </class> <!-- lec39_java_selenium_methods.N01_use_of_explicitly_wait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

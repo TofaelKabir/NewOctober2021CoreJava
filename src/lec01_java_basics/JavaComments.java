@@ -9,7 +9,7 @@ The Java comments are the statements that are not executed by the compiler and i
 /*
  * This is an example of multiple line comments
  * This is not necessary that you must have to write multiple lines
- * If you put single slash + start, then star + single slash, then this format is used for
+ * If you put single slash + star, then star + single slash, then this format is used for
  * mutiple line comments.
  */
 

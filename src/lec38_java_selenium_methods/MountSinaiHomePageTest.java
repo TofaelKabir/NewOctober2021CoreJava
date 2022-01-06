@@ -1,5 +1,6 @@
 package lec38_java_selenium_methods;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -15,14 +16,14 @@ public class MountSinaiHomePageTest {
 	MountSinaiHomePage ms;
 	@BeforeTest
 	public void setUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
-		// WebDriver is an interface and ChromeDriver is a concrete class	
+		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");	
 		ms = new MountSinaiHomePage();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	
 		driver.get("https://www.mountsinai.org/");
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		// driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 	}
 	
@@ -33,7 +34,7 @@ public class MountSinaiHomePageTest {
 	
 	@Test
 	public void titleTest() {
-		String expected = "Mount Sinai Health System - New York City |  Mount Sinai - New York";
+		String expected = "Mount Sinai Health System - New York City | Mount Sinai - New York";
 		String actual = driver.getTitle();
 		System.out.println("home page title is: " + actual);
 		Assert.assertEquals(actual, expected, "Home Page Title doesn't match...");

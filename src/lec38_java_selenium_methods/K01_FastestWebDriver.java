@@ -11,7 +11,7 @@ public class K01_FastestWebDriver {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
 		ChromeOptions options = new ChromeOptions(); // FirefoxOptions for Firefox headless
-		options.addArguments("--headless");		
+		options.addArguments("--headless");	// also we can run in incognito	
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://portaldev.cms.gov/portal/");
 		Thread.sleep(4000);	
