@@ -23,3 +23,4 @@ public class GoodNight03 {
 // always at the end of code, follow above command  and then save all
 // how to save a class -- control/command+s
 // how to save all class -- shift + control/command+s
+// Run by 3 way -- Green play button, right click on code -- run as -- java application, from the top of the page from Run menu

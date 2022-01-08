@@ -15,9 +15,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class N03_use_of_expectedExceptions {
-
 	WebDriver driver;
-
 	@BeforeTest
 	public void setUp() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
@@ -25,46 +23,24 @@ public class N03_use_of_expectedExceptions {
 		driver.manage().window().maximize();
 		driver.get("https://www.mountsinai.org/");
 		Thread.sleep(2000);
-	}
-	
+	}	
 	@Test
 	public void testNGExceptionTest1() {
 		System.out.println("We can verify whether a code throws the expected exception or not. Here it will fail");
 		int i = 1 / 0;
-	}
-	
+	}	
 	@Test(expectedExceptions = ArithmeticException.class)
 	public void testNGExceptionTest2() {
 		System.out.println(
 				"We can verify whether a code throws the expected exception or not. Here it will pass as expected exception is put");
 		int i = 1 / 0;
-	}
-	
+	}	
 	@Test(expectedExceptions = NoSuchElementException.class)
 	public void sameDayTest(){
 		driver.findElement(By.xpath("//span[text()='Same-Day' and @class='hpcards__container--content--title']")).click();
 	}
-	
-	@Test(enabled = true, groups = { "functionalTest" })
-	public void skipHomePageTitleTest() {
-		String title = "Mount Sinai Health System - New York City | Mount Sinai - New York";
-		if (title.equals(driver.getTitle())) {
-			throw new SkipException("Skipping -- as the title matches as expected");
-		} else {
-			System.out.println("Home Page Title doesn't match...");
-		}
-
-	}
-
-	
-	
-	
 	@AfterTest
 	public void tearUp() {
 		driver.quit();
 	}
-	
-	// Until now, whatever you learn, that will be used, mostly later part for interview only
-	
-	
 }

@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 // Alert should be discussed before it
 // The below web site also have same feature to practice
 // https://chercher.tech/practice/practice-pop-ups-selenium-webdriver
-public class N05_use_of_right_click_action {
+public class N09_use_of_right_click_action {
 
 	WebDriver driver;
 

@@ -17,11 +17,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class N04_use_of_scroll_down_and_scroll_up_action {
-
+public class N08_use_of_scroll_down_and_scroll_up_action {
 	WebDriver driver;
 	JavascriptExecutor js;
-
 	@BeforeTest
 	public void setUp() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
@@ -33,7 +31,6 @@ public class N04_use_of_scroll_down_and_scroll_up_action {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Thread.sleep(2000);
 	}
-
 	@Test(enabled = true, priority = 1)
 	public void scrollDownAndScrollUpTest() throws InterruptedException {
 		Actions actions = new Actions(driver);
@@ -45,7 +42,7 @@ public class N04_use_of_scroll_down_and_scroll_up_action {
 		Thread.sleep(4000);
 	}
 
-	// Scroll down by JavascriptExecutor
+	// 2nd way: Scroll down by JavascriptExecutor
 	@Test(enabled = true, priority = 2)
 	public void scrollingAmazonSiteTest() throws InterruptedException{
 		Thread.sleep(2000);
@@ -57,12 +54,10 @@ public class N04_use_of_scroll_down_and_scroll_up_action {
 		Thread.sleep(4000);
 		js.executeScript("window.scrollBy(0,-3000)", ""); // scroll-up
 		driver.navigate().back(); // Back to Mountsinai
-
 		// How to refresh, getTitle by Javascript, not related with this test
 		js.executeScript("history.go(0)"); // To do refresh by Javascript
 		String sText = js.executeScript("return document.title;").toString(); // fetching page title by javascript
 		System.out.println(sText);
-
 	}
 	
 	//3rd way to do scrolling

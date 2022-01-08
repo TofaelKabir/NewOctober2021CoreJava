@@ -53,9 +53,6 @@ public class MountSinaiHomePageTest {
 		sa.assertAll();
 	}
 	
-	
-	
-	
 	@AfterTest
 	public void tearUp() {
 		driver.quit();

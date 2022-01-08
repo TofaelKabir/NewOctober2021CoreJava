@@ -25,7 +25,6 @@ public class N01_use_of_explicitly_wait {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();	
 		driver.get("https://www.mountsinai.org/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		
 	}
 	
 	@Test

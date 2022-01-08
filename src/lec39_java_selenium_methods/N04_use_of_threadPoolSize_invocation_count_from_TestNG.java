@@ -11,7 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class N02_use_of_threadPoolSize_invocation_count_dependsOnMethods_groups_from_TestNG {
+public class N04_use_of_threadPoolSize_invocation_count_from_TestNG {
 
 	WebDriver driver;
 
@@ -24,28 +24,8 @@ public class N02_use_of_threadPoolSize_invocation_count_dependsOnMethods_groups_
 		Thread.sleep(2000);
 	}
 	
-	// use of invocation count, when, so if you know some test cases fail for no reaso
-	// and then you fix it, you can run more than one time by invocation count
-	// use of groups
-	@Test (enabled = true, invocationCount = 3, groups = {"smokeTest", "functionalTest", "regressionTest"})
-	public void mouseHoverActionOnAboutUsTest() throws InterruptedException {
-		Actions actions = new Actions(driver);
-		WebElement aboutUs = driver.findElement(By.xpath("//a[contains(text(), 'About Us') and @class='hidden-xs dropdown']"));
-		actions.moveToElement(aboutUs).build().perform();
-		Thread.sleep(2000);	
-	}
-	
-	// use of dependsOnMethods
-	@Test(enabled = true, dependsOnMethods = {"mouseHoverActionOnAboutUsTest"}, groups = {"regressionTest"} )
-	public void mouseHoverActionOnOurLocations() throws InterruptedException {
-		Actions actions = new Actions(driver); // very important interview question
-		WebElement ourLocations = driver.findElement(By.xpath("//a[normalize-space(text())='Our Locations' and @class='hidden-xs dropdown']"));
-		Thread.sleep(2000);
-		actions.moveToElement(ourLocations).build().perform();
-		Thread.sleep(6000);	
-		System.out.println("\nThe text of this web element is: "+ ourLocations.getText());
-	}
-	
+	// use of invocation count, when, so if you know some test cases fail for no reason
+	// and then you fix it, you can run more than one time by invocation count	
 	// use of threadPoolSize
 	@Test (threadPoolSize = 3, invocationCount = 2, timeOut = 10000)
 	public void titleTest() {

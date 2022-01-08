@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="lec39_java_selenium_methods.N01_use_of_explicitly_wait">
+      <class name="lec39_java_selenium_methods.N03_use_of_expectedExceptions">
         <methods>
           <include name="setUp"/>
-          <include name="requestAnAppointmentTest"/>
+          <include name="testNGExceptionTest1"/>
           <include name="tearUp"/>
         </methods>
-      </class> <!-- lec39_java_selenium_methods.N01_use_of_explicitly_wait -->
+      </class> <!-- lec39_java_selenium_methods.N03_use_of_expectedExceptions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
