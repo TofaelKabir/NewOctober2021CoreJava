@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="lec39_java_selenium_methods.N03_use_of_expectedExceptions">
+      <class name="lec40_java_selenium_methods.G_use_of_manage_by_driver">
         <methods>
-          <include name="setUp"/>
-          <include name="testNGExceptionTest1"/>
+          <include name="pageLoadTimeoutForWindow"/>
           <include name="tearUp"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- lec39_java_selenium_methods.N03_use_of_expectedExceptions -->
+      </class> <!-- lec40_java_selenium_methods.G_use_of_manage_by_driver -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
