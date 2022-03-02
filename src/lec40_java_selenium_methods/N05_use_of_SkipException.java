@@ -17,6 +17,8 @@ public class N05_use_of_SkipException {
 		driver.get("https://www.mountsinai.org/");
 		Thread.sleep(2000);
 	}
+	
+	
 	@Test(enabled = true, groups = { "functionalTest" })
 	public void skipHomePageTitleTest() {
 		String title = "Mount Sinai Health System - New York City | Mount Sinai - New York";
@@ -27,6 +29,8 @@ public class N05_use_of_SkipException {
 		}
 		System.out.println("I am out of the if else condition");
 	}	
+	
+	
 	@Test(enabled = true, groups = { "functionalTest" })
 	public void nonSkipHomePageTitleTest() {
 		String expected = "Mount Sinai Health System - New York City | Mount Sinai - New York";
