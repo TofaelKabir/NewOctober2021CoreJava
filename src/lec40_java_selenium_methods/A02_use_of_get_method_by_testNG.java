@@ -13,6 +13,8 @@ public class A02_use_of_get_method_by_testNG {
 	@BeforeTest
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "/Users/mohammadsharkar/eclipse-workspace/October2021CoreJava/driver/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", "./driver/chromedriver"); // for chrome also forward slash
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver");  // for chrome also forward slash
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();		
@@ -20,6 +22,7 @@ public class A02_use_of_get_method_by_testNG {
 	
 	@Test
 	public void urlTest() throws InterruptedException {
+		public void urlTest() throws InterruptedException {
 		driver.get("https://www.amazon.com");
 		Thread.sleep(3000);
 	}
