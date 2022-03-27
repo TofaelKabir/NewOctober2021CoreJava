@@ -2,7 +2,7 @@ package lec12_java_control_statements;
 
 /*
 1) control statements allows to control the number of times a statement should get executed. 
-For example: for loop, while loop.
+For example: for loop, while loop etc.
 
 2) Programmers usually use loops to execute a set of statements. 
 For loop is used when they need to iterate a part of the programs multiple times. 

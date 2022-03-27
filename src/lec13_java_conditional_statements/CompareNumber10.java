@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class CompareNumber10 {
 
 	public static void main(String[] args) {
-		System.out.println("Please put value here: ");
+		System.out.println("Please enter 2 value below to compare: ");
 		Scanner scanner = new Scanner(System.in);
 
 		int val1 = scanner.nextInt();

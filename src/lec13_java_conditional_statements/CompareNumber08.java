@@ -54,6 +54,8 @@ public class CompareNumber08 {
 			System.out.println(val1 + " is an even number and less than (or equal to) " + val2);
 		} else if (val1 % 2 == 1 && val1 == val2) {
 			System.out.println(val1 + " is an odd number and equal to " + val2);
+		} else {
+			System.out.println("Please enter a valid number");
 		}
 	}
 }

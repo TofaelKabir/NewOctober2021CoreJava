@@ -63,7 +63,7 @@ public class Employee {
 	}
 	
 	// Parameterized method implemented
-	// If global and local variables are same, we don't need to use this keyword in parameterized method
+	// If global and local variables are same, we don't need to use 'this' keyword in parameterized method
 	// But here we kept it as it is not a problem
 	// we will not use from next time
 	public void employee(String EmpName, int empId, char empSex, boolean fullTimeEmployee) {

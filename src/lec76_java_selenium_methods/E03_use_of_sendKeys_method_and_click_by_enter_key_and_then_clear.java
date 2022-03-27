@@ -1,4 +1,4 @@
-package lec40_java_selenium_methods;
+package lec76_java_selenium_methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
